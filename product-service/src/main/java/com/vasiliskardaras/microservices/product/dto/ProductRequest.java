@@ -1,4 +1,11 @@
 package com.vasiliskardaras.microservices.product.dto;
 
-public record ProductRequest() {
+import java.math.BigDecimal;
+
+public record ProductRequest(
+        String id,
+        String name,
+        String description,
+        BigDecimal price
+) {
 }

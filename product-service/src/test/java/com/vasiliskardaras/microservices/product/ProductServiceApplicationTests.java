@@ -12,7 +12,7 @@ import org.testcontainers.containers.MongoDBContainer;
 
 @Import(TestcontainersConfiguration.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class ApplicationTests {
+class ProductServiceApplicationTests {
 
 	@ServiceConnection
 	static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:7.0.5");

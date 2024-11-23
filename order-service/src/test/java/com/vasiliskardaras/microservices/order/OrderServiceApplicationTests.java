@@ -14,7 +14,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 @Import(TestcontainersConfiguration.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class ApplicationTests {
+class OrderServiceApplicationTests {
 
 	@ServiceConnection
 	static MySQLContainer mySQLContainer = new MySQLContainer("mysql:8.3.0");
